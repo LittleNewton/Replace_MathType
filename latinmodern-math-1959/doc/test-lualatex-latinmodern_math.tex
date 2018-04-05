@@ -1,0 +1,19 @@
+%% This is a test file for LaTeX/Unicode-Math for both LuaLaTeX and XeLaTeX
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{amsmath}[2000/07/18] %% Displayed equations
+\usepackage{amssymb}[2002/01/22] %% and additional symbols
+
+\usepackage{fontspec}
+\setromanfont[Ligatures=TeX]{Latin Modern Roman}
+\usepackage{unicode-math}
+
+\setmathfont[math-style=ISO,bold-style=ISO,vargreek-shape=TeX]{Latin Modern Math}
+
+\begin{document}
+
+\input math-test.tex
+
+\end{document}
+

@@ -1,0 +1,59 @@
+INSTALLING MATH FONTS
+
+To install a math font one should add it to the system fonts or install
+it in the TeX Live directory structure (or both).
+
+
+1. INSTALLING SYSTEM FONTS
+
+a. WINDOWS
+Window 7 (or newer): Right click on the font file, choose install
+option. Windows 98 (or newer): Go to Start, then Control Panel.
+Double click on Fonts, and drag-and-drop the font file into the Fonts
+applet window. In MS Windows up to XP, in the Fonts applet, you can
+also choose File from the menu bar, then Install New Font.
+
+b. APPLE (MAC OS X)
+The font can be installed by double-clicking on the font file and
+following the on screen prompts in the Font Book application, or by
+manually copying (or dragging) the font file to any of the standard
+Fonts folders in Mac OS: ~/Library/Fonts/ (user fonts), /Library/Fonts/
+(local fonts) or /System/Library/Fonts/ (system fonts).
+
+c. LINUX (most of current distributions)
+Just copy font file to a directory read by font-config. In most cases
+the directory  /usr/local/share/fonts will be adequate (you can also
+copy the font file to ~/.fonts or /usr/share/fonts ). If the font
+doesn't appear in the applications font list you can run the fc-cache
+program  in order to force a cache rebuild.
+
+
+2. INSTALLING FONTS IN TEX LIVE
+
+To install fonts in the TeX Live system you have to copy it to the
+appropriate directory: (TEXMF root)/texmf-local/fonts/opentype/public/
+(you may have to create this directory). When you want install fonts
+for only one user, you can use the ~/texmf/fonts/opentype directory
+(this directory also may be nonexistent). After coping the font file,
+you have to run mktexlsr command to refresh the kpathsea caches.
+
+Most of the typesetting engines can use fonts installed either in OS or
+in TeX Live. Microsoft Office (Word) uses, of course, only system fonts.
+XeLaTeX can use both of them. LuaLaTeX and ConTeXt uses TeX Live fonts
+by default, but if the OSFONTDIR environment variable is set, the
+system fonts also can be found.
+
+For typesetting math using an OpenType font with (Lua|Xe)LaTeX, an up
+to date version of the unicode-math package (and related LaTeX3
+packages) is crucial.
+
+
+3. CHECKING THE INSTALLATION
+
+In order to verify whether the font installation was successful, you
+may wish to run the TeX examples or open the relevant MS Word example
+and compare the results (in case of the Word file, just a previewer is
+sufficient) with the respective PDF files.
+
+Note that, unlike for TeX, an OTF font is to be referred rather by its
+internalname(s) than by its file name.

@@ -1,0 +1,65 @@
+\pagestyle{empty}
+
+%Accents:
+\begin{displaymath}
+  \widehat{bcd} \ \widetilde{efg} \ \dot A \ \mathbf{\dot A \check t} 
+  \ \check{\mathcal{A}}
+  % \check{\cal a}% at the moment, there is no lowercase calligraphic alphabet in Latin Modern Math
+  \ \mathbf{\acute \imath}
+\end{displaymath}
+
+%Angle brackets:
+\begin{displaymath}
+  \langle a \rangle \left\langle \frac{a}{b} \right\rangle
+  \left\langle \frac{\frac{a}{b}}{c} \right\rangle
+\end{displaymath}
+
+%Big operators:
+\begin{displaymath}
+  (x + a)^n = \sum_{k=0}^n {n \choose k} x^k a^{n-k}
+\end{displaymath}
+
+%%Horizontal brackets:
+\begin{displaymath}
+ \underbrace{\overbracket{aaaaaaa}}_\text{Siédém}
+ \underbrace{\overparen{aaaaa}}_\text{pięć}
+\end{displaymath}
+
+%Squares:
+\begin{displaymath}
+ \sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{2}}}}}} =
+ \frac{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{2}}}}}}}}}{\frac{2}{3}}
+\end{displaymath}
+
+%Cardinal numbers
+\begin{displaymath}
+ \aleph_{0}<2^{\aleph_0}<2^{2^{\aleph_0}}
+\end{displaymath}
+
+%Powers
+\begin{displaymath}
+x^{\alpha} e^{\beta x^{\gamma} e^{\delta x^{\epsilon}}}
+\end{displaymath}
+
+%Integrals
+\begin{displaymath}
+ \oint_C\mathbf{F}\cdot d\mathbf{r}=\int_S\mathbf{\nabla}\times\mathbf{F}\cdot d\mathbf{S}\qquad
+ \oint_C\vec{A}\cdot\vec{dr}=\iint_S(\nabla\times\vec{A})\,\vec{dS}
+\end{displaymath}
+
+%Sum
+\begin{displaymath}
+ (1+x)^n=1+\frac{nx}{1!}+\frac{n(n-1)x^2}{2!}+\cdots
+\end{displaymath}
+
+%Equations
+\setlength\arraycolsep{0.15em}
+\begin{eqnarray*}
+ \int_{-\infty}^\infty e^{-x^2}dx &=& \left[\int_{-\infty}^\infty e^{-x^2}dx
+  \int_{-\infty}^\infty e^{-y^2}dy\right]^{1/2}\\
+ &=& \left[\int_{0}^{2\pi} \int_0^\infty e^{-r^2}r\,dr\,d\theta\right]^{1/2}\\
+ &=& \left[\pi\int_{0}^\infty e^{-u}du\right]^{1/2}\\
+ &=& \sqrt{\pi}
+\end{eqnarray*}
+
+\endinput

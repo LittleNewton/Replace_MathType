@@ -1,0 +1,15 @@
+%% This is a test file for ConTeXt
+
+\starttypescript [math][lmodern,modern][all]
+    \definefontsynonym[MathRoman][name:Latin Modern Math][features=math\mathsizesuffix]
+\stoptypescript
+\setupbodyfont[modern]
+
+\setuppagenumbering[state=stop]
+
+\starttext
+
+\input math-test-context.tex
+
+\stoptext
+

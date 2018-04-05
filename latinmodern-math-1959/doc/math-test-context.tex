@@ -1,0 +1,64 @@
+
+\startformula
+  \widehat{bcd} \ \widetilde{efg} \ \dot A \ {\bi\dot A \check t} 
+  \  \check{\cal A} 
+  % \check{\cal a}% at the moment, there is no lowercase calligraphic alphabet in Latin Modern Math
+  \ \mathbf{\acute \imath}
+\stopformula
+
+%Angle brackets:
+\startformula
+  \langle a \rangle \left\langle \frac{a}{b} \right\rangle
+   \left\langle \frac{\frac{a}{b}}{c} \right\rangle
+\stopformula
+
+%Big operators:
+\startformula
+  (x + a)^n = \sum_{k=0}^n {n \choose k} x^k a^{n-k}
+\stopformula
+
+%%Horizontal brackets:
+\startformula
+ \underbrace{\overbracket{aaaaaaa}}_{\rm Siedém}
+  \underbrace{\overparent{aaaaa}}_{\rm pięć}
+\stopformula
+
+%Squares:
+\startformula
+ \sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{2}}}}}} =
+ \frac{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt{2}}}}}}}}}{\frac{2}{3}}
+\stopformula
+
+%Cardinal numbers
+\startformula
+ \aleph_{0}<2^{\aleph_0}<2^{2^{\aleph_0}}
+\stopformula
+
+%Powers
+\startformula
+x^{\alpha} e^{\beta x^{\gamma} e^{\delta x^{\epsilon}}}
+\stopformula
+
+%Integrals
+\startformula
+ \oint_C\mathbf{F}\cdot d\mathbf{r}=\int_S\mathbf{\nabla}\times\mathbf{F}\cdot d\mathbf{S}\qquad
+ \oint_C\vec{A}\cdot\vec{dr}=\iint_S(\nabla\times\vec{A})\,\vec{dS}
+\stopformula
+
+%Sum
+\startformula
+ (1+x)^n=1+\frac{nx}{1!}+\frac{n(n-1)x^2}{2!}+\cdots
+\stopformula
+
+%Equations
+\startformula
+\startmathalignment
+ \int_{-\infty}^\infty e^{-x^2}dx \NC =\NC  \left[\int_{-\infty}^\infty e^{-x^2}dx
+  \int_{-\infty}^\infty e^{-y^2}dy\right]^{1/2} \NR
+ \NC =\NC \left[\int_{0}^{2\pi} \int_0^\infty  e^{-r^2}r\,dr\,d\theta\right]^{1/2}\NR
+ \NC =\NC \left[\pi\int_{0}^\infty e^{-u}du\right]^{1/2}\NR
+ \NC =\NC \sqrt{\pi}
+\stopmathalignment
+\stopformula
+
+\endinput
