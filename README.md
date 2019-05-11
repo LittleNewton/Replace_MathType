@@ -8,7 +8,7 @@
 
 下图显示了365的公式菜单，可以看到，已经官方支持LaTeX语法了！
 
-![Word menu](https://raw.githubusercontent.com/LittleNewton/LittleNewton_Figures_References/master/Replace_MathType/Word%20menu.png)
+![Word menu](https://raw.githubusercontent.com/LittleNewton/Replace_MathType/master/figure/you_latex.gif)
 
 > 特别注意，macOS版本的Office 365不支持LaTeX语法。如果是苹果用户，推荐使用虚拟机或使用双系统。不过，macOS用户也可以安装本字体以实现预览。
 
