@@ -74,6 +74,8 @@ sudo snap install mathpix-snipping-tool
 
 Just enjoy it.
 
+![images](https://raw.githubusercontent.com/LittleNewton/Replace_MathType/master/figure/2019-05-12%2000.23.05.gif)
+
 ## 5. 其他字体方案
 
 要想更换内置公式的数学字体，字体必须支持Opentype Math
