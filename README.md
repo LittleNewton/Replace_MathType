@@ -10,7 +10,7 @@
 
 ![Word menu](https://raw.githubusercontent.com/LittleNewton/Replace_MathType/master/figure/you_latex.gif)
 
-> 特别注意，macOS版本的Office 365不支持LaTeX语法。如果是苹果用户，推荐使用虚拟机或使用双系统。不过，macOS用户也可以安装本字体以实现预览。
+> 特别注意，Office 365 的全部功能已经在 macOS 10.14.5 及以后的版本里得到了支持，而且，**Word for macOS 也支持LaTeX语法输入！**
 
 ### 1.2 mathpix 软件
 
@@ -44,17 +44,17 @@ sudo snap install mathpix-snipping-tool
 
 其他的诸如Axmath之类的小众软件，输出效果不错，不过输出的PDF是不可选中、不可搜索版本，格式应该是某种矢量图（放大之后可以明显看到不光滑的边界）。
 
-### 2.2 Office 365内置功能原生优秀
+### 2.2 Office 365 内置功能原生、优秀
 
-365的内置公式比较强大。渲染之后与原文档锲合度最高。
+Office 365 的内置公式比较强大。渲染之后与原文档锲合度最高。
 
-虽然365也是付费软件（淘宝家庭版拆分装，仅售80 RMB / 年），不过在当下中国的大学，没有微软的Word还真的是玩不转，不如弃暗投明。用好Word，一样能做出漂亮的文稿。这里就不谈Word与LaTeX的优劣了。
+虽然365也是付费软件（淘宝家庭版拆分装，仅售60 RMB / 年），不过在当下中国的大学，没有微软的Word还真的是玩不转，不如弃暗投明。用好 Word，一样能做出漂亮的文稿。这里就不谈 Word 与 LaTeX 的优劣了。
 
-> **365内置的公式，支持段落调节，而MathType等插件生成的公式，不支持自动调节，在某些情况下很是难看。**
+> **365 内置的公式，支持段落调节，而 MathType 等插件生成的公式，不支持自动调节，在某些情况下很是难看。**
 
 ### 3. 安装字体
 
-要使用下面这个demo方案，需要安装一款字体：```Latin Modern Math```。本Repository已经给出，直接切换到```01. Latin Modern Math/otf/```文件夹下，找到latinmodern-math.otf文件，右键->安装即可。macOS用户自己摸索。
+要使用下面这个demo方案，需要安装一款字体：```Latin Modern Math```。本 Repository 已经给出，直接切换到```01. Latin Modern Math/otf/```文件夹下，找到latinmodern-math.otf文件，右键->安装即可。macOS用户自己摸索。
 
 这个字体相对比较好看，不过这里也提供了其他一些解决方案。
 
@@ -143,12 +143,22 @@ TeX Live自带数学字体
 
 [下载地址](http://ctan.org/pkg/asana-math)
 
-注意：很遗憾，Acrobat DC Pro的Word插件PDFMaker不支持Asana Math字体转换为pdf文档，不过有趣的是，该字体和Cambria Math一样支持Word直接转换pdf而不会被强制转换为位图。
+注意：很遗憾，Acrobat DC Pro 的 Word 插件 PDFMaker 不支持 Asana Math 字体转换为 pdf 文档，不过有趣的是，该字体和 Cambria Math 一样支持 Word 直接转换 pdf 而不会被强制转换为位图。
 
-好了，就这么些常用的数学公式字体，由于数学符号的特殊性，所以支持Opentype Math的字体并不多，但已经基本能满足需求了，同时转换成通用格式pdf时，推荐使用Adobe Acrobat DC Pro的Word插件(安装后升级补丁就有)，能够输出比Word更加优质高质量的pdf文档(很明确地告诉你，想要更改为这些数学字体后输出矢量文本pdf文档，必须使用PDFMaker)。
+## 6. 输出 Word 为 PDF 文档
+
+### 6.1 Windows 10 平台
+
+由于数学符号的特殊性，支持Opentype Math的字体并不多，但已经基本能满足需求。同时转换成通用格式pdf时，推荐使用Adobe Acrobat DC Pro的 Word 插件(安装后升级补丁就有)，能够输出比 Word 自带的转换器更加优质的高质量的 pdf 文档 (**很明确地告诉你，想要更改为这些数学字体后输出矢量文本pdf文档，必须使用PDFMaker**)。
 
 ![PDFMaker](https://raw.githubusercontent.com/LittleNewton/LittleNewton_Figures_References/master/Replace_MathType/PDF%20Maker.png)
 
-此外，最好设置为高质量印刷来输出pdf，点击 首选项>转换设置>高质量打印。
+此外，最好设置为**高质量印刷**来输出pdf，点击 **首选项 > 转换设置 > 高质量打印**。
 
 ![Print Quality](https://raw.githubusercontent.com/LittleNewton/LittleNewton_Figures_References/master/Replace_MathType/Print%20Quality.png)
+
+### 6.2 macOS 平台
+
+在 Office 领域，macOS 有史以来真正超越 Windows 的一次，就是在 PDF 转换上。Office 365 Word for macOS 可以直接完美输出 PDF，并且**输出的所有数学字体都是矢量的**。而且输出的公式在 PDF 阅读器里打开，不会出现在 PDF expert 下「隐形行高」很大的情况。这一点，macOS 完胜。
+
+MS Office for macOS 已经正式达到可以和 Windows 10 平台的 Office 抗衡的地步了！
