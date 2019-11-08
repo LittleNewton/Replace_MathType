@@ -4,7 +4,9 @@
 
 ### 1.1 Office 365
 
-本库的基础软件是Windows 10 Office 365（下称365），一般的Office 2016可行性未知。365会给与最新的软件支持，所以在兼容性与新特性上面会有相当大的优势。
+本库的基础软件是Windows 10 Office 365（下称365），一般的Office 2016 / 2019 可行性未知。Office 365 会给与最新的软件支持，所以在兼容性与新特性上面会有相当大的优势。
+
+⚠️ 如何低价购买正版 Office 365？可淘宝（taobao.com）搜索「Office 365 家庭版 拆分」关键词。
 
 下图显示了365的公式菜单，可以看到，已经官方支持LaTeX语法了！
 
@@ -48,23 +50,23 @@ sudo snap install mathpix-snipping-tool
 
 Office 365 的内置公式比较强大。渲染之后与原文档锲合度最高。
 
-虽然365也是付费软件（淘宝家庭版拆分装，仅售60 RMB / 年），不过在当下中国的大学，没有微软的Word还真的是玩不转，不如弃暗投明。用好 Word，一样能做出漂亮的文稿。这里就不谈 Word 与 LaTeX 的优劣了。
+虽然365也是付费软件（淘宝家庭版拆分装，仅 50 RMB / 年），不过在当下中国的大学，没有微软的 Word 还真的是玩不转，不如弃暗投明。用好 Word，一样能做出漂亮的文稿。这里就不谈 Word 与 LaTeX 的优劣了。
 
 > **365 内置的公式，支持段落调节，而 MathType 等插件生成的公式，不支持自动调节，在某些情况下很是难看。**
 
 ### 3. 安装字体
 
-要使用下面这个demo方案，需要安装一款字体：```Latin Modern Math```。本 Repository 已经给出，直接切换到```01. Latin Modern Math/otf/```文件夹下，找到latinmodern-math.otf文件，右键->安装即可。macOS用户自己摸索。
+要使用下面这个demo方案，需要安装一款字体：```Latin Modern Math```。本 Repository 已经给出，直接切换到```01. Latin Modern Math/otf/```文件夹下，找到latinmodern-math.otf文件，右键->安装即可。macOS用户自己对照摸索，非常简单。
 
 这个字体相对比较好看，不过这里也提供了其他一些解决方案。
 
 ### 4. Demo
 
-在365 Word里面（PPT不支持）：
+在 Windows Office 365 Word 里面（PPT不支持）：
 
-- Step 1 ```<ALT> + <=>```   调出输入栏
-- Step 2 ```<CTRL> + <SHIFT> + <=>```  将公式转为线性
-- Step 3 复制黏贴这段代码：
+- Step 1 ```<ALT> + <=>```   调出公式输入框
+- Step 2 ```<CTRL> + <SHIFT> + <=>```  将公式转为线性，同时在**公式选项卡**里把公式切换为 LaTeX ⚠️
+- Step 3 复制黏贴这段代码到公式输入框：
 ```
 \left(x+a\right)^n=\sum_{k=1}^{n}\int_{t_1}^{t_2}{\binom{n}{k}{f(x)}^ka^{n-k}}\box(24&dx)
 ```
@@ -149,7 +151,7 @@ TeX Live自带数学字体
 
 ### 6.1 Windows 10 平台
 
-由于数学符号的特殊性，支持Opentype Math的字体并不多，但已经基本能满足需求。同时转换成通用格式pdf时，推荐使用Adobe Acrobat DC Pro的 Word 插件(安装后升级补丁就有)，能够输出比 Word 自带的转换器更加优质的高质量的 pdf 文档 (**很明确地告诉你，想要更改为这些数学字体后输出矢量文本pdf文档，必须使用PDFMaker**)。
+⚠️ 由于数学符号的特殊性，支持 Opentype Math 的字体并不多，但已经基本能满足需求。同时转换成通用格式pdf时，推荐使用 **Adobe Acrobat DC Pro** 的 Word 插件(安装后升级补丁就有)，能够输出比 Word 自带的转换器更加优质的高质量的 pdf 文档 (**很明确地告诉你，想要更改为这些数学字体后输出矢量文本pdf文档，必须使用PDFMaker**)。
 
 ![PDFMaker](https://raw.githubusercontent.com/LittleNewton/LittleNewton_Figures_References/master/Replace_MathType/PDF%20Maker.png)
 
@@ -159,6 +161,6 @@ TeX Live自带数学字体
 
 ### 6.2 macOS 平台
 
-在 Office 领域，macOS 有史以来真正超越 Windows 的一次，就是在 PDF 转换上。Office 365 Word for macOS 可以直接完美输出 PDF，并且**输出的所有数学字体都是矢量的**。而且输出的公式在 PDF 阅读器里打开，不会出现在 PDF expert 下「隐形行高」很大的情况。这一点，macOS 完胜。
+⚠️ 在 Office 领域，macOS 有史以来真正超越 Windows 的一次，就是在 PDF 转换上。Office 365 Word for macOS 可以直接完美输出 PDF，并且**输出的所有数学字体都是矢量的**。而且输出的公式在 PDF 阅读器里打开，不会出现在 PDF expert 下「隐形行高」很大的情况。这一点，macOS 完胜。
 
 MS Office for macOS 已经正式达到可以和 Windows 10 平台的 Office 抗衡的地步了！
