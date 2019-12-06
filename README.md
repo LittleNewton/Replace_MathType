@@ -1,5 +1,7 @@
 # Replace_MathType
 
+![](https://img.shields.io/github/issues/littleNewton/Replace_MathType)
+
 ## 1. 基于Microsoft Office 365
 
 ### 1.1 Office 365
@@ -157,7 +159,7 @@ TeX Live自带数学字体
 
 Windows 10 自带的导出功能并不完善，对于我们最常用的数学字体 Latin Modern Math 的支持不好，如果强行使用 Word 的导出功能，会使得输出的 PDF 中的数学公式为位图形式，锯齿感严重。之前的解决办法是安装 Adobe 的 PDF Maker 插件，这款插件是 Acrobat Pro 自带的一个 Word 插件，该插件的导出功能比较强大。后经 @invisprints 的提醒，发现有更加简单的方法。
 
-![microsoft_print_to_pdf](https://raw.githubusercontent.com/LittleNewton/Replace_MathType/master/figure/print_to_pdf.png)
+![microsoft_print_to_pdf](https://raw.githubusercontent.com/LittleNewton/Replace_MathType/master/figure/microsoft_print_to_pdf.png)
 
 如上图，【文件】- 【打印】 - <选择打印机>，使用 Word for Windwos 自带的打印功能，其中选择打印机为 **Microsoft Print to PDF** 这款虚拟打印机，然后点击打印，即可完美实现 PDF 输出。
 
