@@ -98,9 +98,9 @@ Just enjoy it.
 
 TeX Live中自带，全称是Scientific and Technical Information Exchange font，这个字体是一套比较大的也是历史比较长的字体，这个字体包含正文字体和数学字体。这个字体风格类似Times，所以很多刊物会用到的。
 
-[项目主页](http://www.stixfonts.org/
+[项目主页](http://www.stixfonts.org/)
 
-下载地址)https://sourceforge.net/projects/stixfonts/
+[下载地址](https://github.com/stipub/stixfonts)
 
 ![STIX](https://raw.githubusercontent.com/LittleNewton/LittleNewton_Figures_References/master/Replace_MathType/STIX.png)
 
