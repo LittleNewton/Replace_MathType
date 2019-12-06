@@ -149,18 +149,18 @@ TeX Live自带数学字体
 
 ## 6. 输出 Word 为 PDF 文档
 
+书写论文、一般文档的重要一步就是将 docx 导出为  PDF，嵌入了所需字体的 PDF 文件会以精准的方式呈现文档的原貌。
+
+这里的原则是：**尽可能使用 Word (Office 365) 的原生功能，而不是借助第三方的插件。**
+
 ### 6.1 Windows 10 平台
 
-⚠️ 由于数学符号的特殊性，支持 Opentype Math 的字体并不多，但已经基本能满足需求。同时转换成通用格式pdf时，推荐使用 **Adobe Acrobat DC Pro** 的 Word 插件(安装后升级补丁就有)，能够输出比 Word 自带的转换器更加优质的高质量的 pdf 文档 (**很明确地告诉你，想要更改为这些数学字体后输出矢量文本pdf文档，必须使用PDFMaker**)。
+Windows 10 自带的导出功能并不完善，对于我们最常用的数学字体 Latin Modern Math 的支持不好，如果强行使用 Word 的导出功能，会使得输出的 PDF 中的数学公式为位图形式，锯齿感严重。之前的解决办法是安装 Adobe 的 PDF Maker 插件，这款插件是 Acrobat Pro 自带的一个 Word 插件，该插件的导出功能比较强大。后经 @invisprints 的提醒，发现有更加简单的方法。
 
-![PDFMaker](https://raw.githubusercontent.com/LittleNewton/LittleNewton_Figures_References/master/Replace_MathType/PDF%20Maker.png)
+![microsoft_print_to_pdf](https://raw.githubusercontent.com/LittleNewton/Replace_MathType/master/figure/print_to_pdf.png)
 
-此外，最好设置为**高质量印刷**来输出pdf，点击 **首选项 > 转换设置 > 高质量打印**。
-
-![Print Quality](https://raw.githubusercontent.com/LittleNewton/LittleNewton_Figures_References/master/Replace_MathType/Print%20Quality.png)
+如上图，【文件】- 【打印】 - <选择打印机>，使用 Word for Windwos 自带的打印功能，其中选择打印机为 **Microsoft Print to PDF** 这款虚拟打印机，然后点击打印，即可完美实现 PDF 输出。
 
 ### 6.2 macOS 平台
 
-⚠️ 在 Office 领域，macOS 有史以来真正超越 Windows 的一次，就是在 PDF 转换上。Office 365 Word for macOS 可以直接完美输出 PDF，并且**输出的所有数学字体都是矢量的**。而且输出的公式在 PDF 阅读器里打开，不会出现在 PDF expert 下「隐形行高」很大的情况。这一点，macOS 完胜。
-
-MS Office for macOS 已经正式达到可以和 Windows 10 平台的 Office 抗衡的地步了！
+macOS 平台的输出比较简单，只需要 `Command Shift C` ，另存为 PDF ，即可实现完美输出。
