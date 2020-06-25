@@ -1,8 +1,13 @@
-# Replace_MathType
+#! https://zhuanlan.zhihu.com/p/63555192
+# Microoft Word 数学公式完美解决方案 （Replace_MathType)
 
 ![](https://img.shields.io/github/issues/littleNewton/Replace_MathType)
 
-## 1. 基于Microsoft Office 365
+与本文章相关的**所有内容**，都可以在[这个](https://github.com/LittleNewton/Replace_MathType) GitHub 仓库里找到！
+
+本文会不定期更新，希望能及时查看 commit message 以获取更新内容。
+
+## 1. 一切基于 Microsoft Office 365 ⭐⭐⭐⭐⭐
 
 ### 1.1 Office 365
 
@@ -10,43 +15,40 @@
 
 ⚠️ 如何低价购买正版 Office 365？可淘宝（taobao.com）搜索「Office 365 家庭版 拆分」关键词。
 
-下图显示了365的公式菜单，可以看到，已经官方支持LaTeX语法了！
+下图显示了365的公式菜单，可以看到，已经官方支持 $\LaTeX$ 语法了！
 
 ![Word menu](https://raw.githubusercontent.com/LittleNewton/Replace_MathType/master/figure/you_latex.gif)
 
 > 特别注意，Office 365 的全部功能已经在 macOS 10.14.5 及以后的版本里得到了支持，而且，**Word for macOS 也支持LaTeX语法输入！**
 
-### 1.2 mathpix 软件
+### 1.2 mathpix 软件 ⭐⭐⭐⭐
 
-mathpix是一个公式OCR软件，通过该软件，可以提取图片中的印刷体公式。
-
-虽然该公司声称该软件可以提取手写的公式，但是实际效果并不好。
-
-#### 1.2.1 macOS / Windows安装
-
-本库给出了安装文件，位于```app```文件夹内。
-
-#### 1.2.2 Ubuntu用户
-
-Ubuntu用户请通过命令行安装。
-
-``` bash
-sudo snap install mathpix-snipping-tool
-```
+mathpix是一个公式OCR软件，通过该软件，可以提取图片中的印刷体公式。虽然该公司声称该软件可以提取手写的公式，但是实际效果并不好。
 
 > 官方地址：https://mathpix.com/
 
-**如果可以把上述两个软件结合使用，那么在写论文的背景知识的过程中，写公式效率可以提升10倍左右！**
+直接在官网下载二进制安装包即可使用。目前已经有比较好的解决方案，所以不再提供安装包下载。
 
-> 友情提示，本库的 app 文件夹里提供的是 1.0 版本的 MathPix 软件，如果你想用新版，那么需要花钱订阅。目前新版的 MathPix 软件必须订阅才能使用。macOS 的可以禁止自动升级，但是 Windows 的会自己升级，而且无法禁止。目前来看，并没有很好的解决方案。
+### 1.3 通过 mathpix.store 网站充值 mathpix ⭐⭐⭐⭐
 
-## 2. 为什么不用MathType等插件？
+目前我测试了购买情况，发现价格挺便宜，而且是独立账号，可以去这个网站看看。网址是 mathpix.store 。
+
+**如果可以把上述几个软件结合使用，那么在写论文的背景知识的过程中，写公式效率可以提升10倍左右！**
+
+### 1.3 `latexLive.com` 网站 ⭐⭐⭐⭐⭐
+
+这个网站是著名的哔哩哔哩 UP 主【[妈咪说MommyTalk](妈咪说MommyTalk)】开发的一款 web 程序，该程序内部集成了 mathpix 的接口，可以非常方便地进行公式在线编辑、公式 OCR。在 Windows10 系统上通过 `win Shift S` 键截图到剪贴板，然后在 latexLive.com 网站对应页面进行全局粘贴，可以很快速地实现 OCR，macOS 也可以通过某些截图软件实现该功能。
+
+![latexlive](img/latexlive.com公式识别.gif)
+> ↑ latexLive.com 的威力！
+
+## 2. 为什么不用MathType等插件
 
 ### 2.1 收费软件
 
 价格很昂贵，而且盗版体验很差，注意⚠️：免费的永远是最贵的！
 
-其他的诸如Axmath之类的小众软件，输出效果不错，不过输出的PDF是不可选中、不可搜索版本，格式应该是某种矢量图（放大之后可以明显看到不光滑的边界）。
+其他的诸如 Axmath 之类的小众软件，输出效果不错，不过输出的 PDF 是不可选中、不可搜索版本，格式应该是某种矢量图（放大之后可以明显看到不光滑的边界）。
 
 ### 2.2 Office 365 内置功能原生、优秀
 
@@ -56,23 +58,25 @@ Office 365 的内置公式比较强大。渲染之后与原文档锲合度最高
 
 > **365 内置的公式，支持段落调节，而 MathType 等插件生成的公式，不支持自动调节，在某些情况下很是难看。**
 
-### 3. 安装字体
+## 3. 安装字体 ⭐⭐⭐⭐⭐
 
 要使用下面这个demo方案，需要安装一款字体：```Latin Modern Math```。本 Repository 已经给出，直接切换到```01. Latin Modern Math/otf/```文件夹下，找到latinmodern-math.otf文件，右键->安装即可。macOS用户自己对照摸索，非常简单。
 
 这个字体相对比较好看，不过这里也提供了其他一些解决方案。
 
-### 4. Demo
+## 4. Demo
+
+### 4.1 在 Word 中利用原生公式编译器 ⭐⭐
 
 在 Windows Office 365 Word 里面（PPT不支持）：
 
-- Step 1 ```<ALT> + <=>```   调出公式输入框
-- Step 2 ```<CTRL> + <SHIFT> + <=>```  将公式转为线性，同时在**公式选项卡**里把公式切换为 LaTeX ⚠️
+- Step 1 按下 `Alt =`   调出公式输入框
+- Step 2 按下 `Ctrl Shift =`  将公式转为**线性**，同时在**公式选项卡**里把公式切换为 $\LaTeX$ ⚠️
 - Step 3 复制黏贴这段代码到公式输入框：
 ```
 \left(x+a\right)^n=\sum_{k=1}^{n}\int_{t_1}^{t_2}{\binom{n}{k}{f(x)}^ka^{n-k}}\box(24&dx)
 ```
-- Step 4 ```<CTRL> + <=>``` 渲染公式
+- Step 4 按下 `Ctrl =` 渲染公式
 
 ![sample code](https://raw.githubusercontent.com/LittleNewton/LittleNewton_Figures_References/master/Replace_MathType/sample%20code.png)
 
@@ -82,9 +86,15 @@ Just enjoy it.
 
 ![images](https://raw.githubusercontent.com/LittleNewton/Replace_MathType/master/figure/2019-05-12%2000.23.05.gif)
 
-## 5. 其他字体方案
+### 4.2 利用 latexlive.com 导出 MathML 对象粘贴到 Word ⭐⭐⭐⭐⭐
 
-要想更换内置公式的数学字体，字体必须支持Opentype Math
+![](img/复制%20MathML%20对象.gif)
+
+> 如果你的网络访问 latexLive.com 没问题的话，建议使用这个方法。因为 Word 自带的编辑器有可能抽风。
+
+## 5. 其他字体方案 (⭐⭐⭐选读)
+
+要想更换内置公式的数学字体，字体必须支持 Opentype Math
 
 **重要说明**：尽管Word中支持更改这些字体，但是Office本身局限性，自带pdf输出只支持 **Cambria Math** 和 **Asana Math** 转换为矢量文本，并不支持其他数学字体转换公式为矢量文本，而是强制转换为位图导致模糊，所以必须依赖于强大的第三方Adobe Acrobat DC Pro的Word插件 **PDFMaker** 来嵌入数学字体集
 
@@ -149,7 +159,7 @@ TeX Live自带数学字体
 
 注意：很遗憾，Acrobat DC Pro 的 Word 插件 PDFMaker 不支持 Asana Math 字体转换为 pdf 文档，不过有趣的是，该字体和 Cambria Math 一样支持 Word 直接转换 pdf 而不会被强制转换为位图。
 
-## 6. 输出 Word 为 PDF 文档
+## 6. 输出 Word 为 PDF 文档 ⭐⭐⭐⭐⭐
 
 书写论文、一般文档的重要一步就是将 docx 导出为  PDF，嵌入了所需字体的 PDF 文件会以精准的方式呈现文档的原貌。
 
