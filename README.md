@@ -1,4 +1,5 @@
 #! https://zhuanlan.zhihu.com/p/63555192
+
 # Microoft Word 数学公式完美解决方案 （Replace_MathType)
 
 ![](https://img.shields.io/github/issues/littleNewton/Replace_MathType)
@@ -7,9 +8,9 @@
 
 本文会不定期更新，希望能及时查看 commit message 以获取更新内容。
 
-## 1. 一切基于 Microsoft Office 365 ⭐⭐⭐⭐⭐
+## 1. 一切基于 Microsoft Office 365
 
-### 1.1 Office 365
+### 1.1 Office 365 ⭐⭐⭐⭐⭐
 
 本库的基础软件是Windows 10 Office 365（下称365），一般的Office 2016 / 2019 可行性未知。Office 365 会给与最新的软件支持，所以在兼容性与新特性上面会有相当大的优势。
 
@@ -19,7 +20,7 @@
 
 ![Word menu](https://raw.githubusercontent.com/LittleNewton/Replace_MathType/master/figure/you_latex.gif)
 
-> 特别注意，Office 365 的全部功能已经在 macOS 10.14.5 及以后的版本里得到了支持，而且，**Word for macOS 也支持LaTeX语法输入！**
+> 特别注意，Office 365 的全部功能已经在 macOS 10.14.5 及以后的版本里得到了支持，而且，**Word for macOS 也支持 LaTeX 语法输入！**
 
 ### 1.2 mathpix 软件 ⭐⭐⭐⭐
 
@@ -37,7 +38,7 @@ mathpix是一个公式OCR软件，通过该软件，可以提取图片中的印�
 
 ### 1.3 `latexLive.com` 网站 ⭐⭐⭐⭐⭐
 
-这个网站是著名的哔哩哔哩 UP 主【[妈咪说MommyTalk](妈咪说MommyTalk)】开发的一款 web 程序，该程序内部集成了 mathpix 的接口，可以非常方便地进行公式在线编辑、公式 OCR。在 Windows10 系统上通过 `win Shift S` 键截图到剪贴板，然后在 latexLive.com 网站对应页面进行全局粘贴，可以很快速地实现 OCR，macOS 也可以通过某些截图软件实现该功能。
+这个网站是著名的哔哩哔哩 UP 主【[妈咪说MommyTalk](妈咪说MommyTalk)】开发的一款 web [程序](latexlive.com)，该程序内部集成了 mathpix 的接口，可以非常方便地进行公式在线编辑、公式 OCR。在 Windows10 系统上通过 `win Shift S` 键截图到剪贴板，然后在 latexLive.com 网站对应页面进行全局粘贴，可以很快速地实现 OCR，macOS 也可以通过某些截图软件实现该功能。
 
 ![latexlive](img/latexlive.com公式识别.gif)
 > ↑ latexLive.com 的威力！
@@ -68,15 +69,17 @@ Office 365 的内置公式比较强大。渲染之后与原文档锲合度最高
 
 ### 4.1 在 Word 中利用原生公式编译器 ⭐⭐
 
-在 Windows Office 365 Word 里面（PPT不支持）：
+在 Windows Office 365 Word 里面（PPT 不支持）：
 
 - Step 1 按下 `Alt =`   调出公式输入框
 - Step 2 按下 `Ctrl Shift =`  将公式转为**线性**，同时在**公式选项卡**里把公式切换为 $\LaTeX$ ⚠️
 - Step 3 复制黏贴这段代码到公式输入框：
-```
+
+``` latex
 \left(x+a\right)^n=\sum_{k=1}^{n}\int_{t_1}^{t_2}{\binom{n}{k}{f(x)}^ka^{n-k}}\box(24&dx)
 ```
-- Step 4 按下 `Ctrl =` 渲染公式
+
+- Step 4 按下 `Ctrl =` 渲染公式。注意，如果你是在表格中输入公式，那么需要手动右键更改为专业模式，快捷键不起作用。
 
 ![sample code](https://raw.githubusercontent.com/LittleNewton/LittleNewton_Figures_References/master/Replace_MathType/sample%20code.png)
 
@@ -88,15 +91,15 @@ Just enjoy it.
 
 ### 4.2 利用 latexlive.com 导出 MathML 对象粘贴到 Word ⭐⭐⭐⭐⭐
 
-![](img/复制%20MathML%20对象.gif)
+![从 web 程序复制 MathML 对象到 Word](img/复制%20MathML%20对象.gif)
 
 > 如果你的网络访问 latexLive.com 没问题的话，建议使用这个方法。因为 Word 自带的编辑器有可能抽风。
 
 ## 5. 其他字体方案 (⭐⭐⭐选读)
 
-要想更换内置公式的数学字体，字体必须支持 Opentype Math
+要想更换内置公式的数学字体，字体必须支持 OpenType Math
 
-**重要说明**：尽管Word中支持更改这些字体，但是Office本身局限性，自带pdf输出只支持 **Cambria Math** 和 **Asana Math** 转换为矢量文本，并不支持其他数学字体转换公式为矢量文本，而是强制转换为位图导致模糊，所以必须依赖于强大的第三方Adobe Acrobat DC Pro的Word插件 **PDFMaker** 来嵌入数学字体集
+**重要说明**：尽管 Word 中支持更改这些字体，但是 Office 本身局限性，自带pdf输出只支持 **Cambria Math** 和 **Asana Math** 转换为矢量文本，并不支持其他数学字体转换公式为矢量文本，而是强制转换为位图导致模糊，所以必须依赖于强大的第三方 Adobe Acrobat DC Pro 的W ord 插件 **PDFMaker** 来嵌入数学字体集
 
 ### 5.1 Latin Modern Math，TeX Live自带默认的数学字体
 
@@ -106,7 +109,7 @@ Just enjoy it.
 
 ### 5.2 STIX
 
-TeX Live中自带，全称是Scientific and Technical Information Exchange font，这个字体是一套比较大的也是历史比较长的字体，这个字体包含正文字体和数学字体。这个字体风格类似Times，所以很多刊物会用到的。
+TeX Live 中自带，全称是Scientific and Technical Information Exchange font，这个字体是一套比较大的也是历史比较长的字体，这个字体包含正文字体和数学字体。这个字体风格类似 Times，所以很多刊物会用到的。
 
 [项目主页](http://www.stixfonts.org/)
 
@@ -116,7 +119,7 @@ TeX Live中自带，全称是Scientific and Technical Information Exchange font�
 
 ### 5.3 XITS Math
 
-基于STIX的一套数学字体，TeX Live中自带，比STIX多了一些数学扩展。类似于Times New Roman.
+基于 STIX 的一套数学字体，TeX Live 中自带，比 STIX 多了一些数学扩展。类似于 Times New Roman.
 
 [下载地址](https://github.com/khaledhosny/xits-math/downloads)
 
@@ -136,7 +139,6 @@ TeX Live中自带，全称是Scientific and Technical Information Exchange font�
 
 ![Termes Math](https://raw.githubusercontent.com/LittleNewton/LittleNewton_Figures_References/master/Replace_MathType/Termes%20Math.png)
 
-
 ### 5.5 Neo Euler
 
 这个字体需要单独安装。
@@ -153,7 +155,7 @@ Office公式默认字体。
 
 ### 5.7 Asana Math
 
-TeX Live自带数学字体
+TeX Live 自带数学字体
 
 [下载地址](http://ctan.org/pkg/asana-math)
 
@@ -161,7 +163,7 @@ TeX Live自带数学字体
 
 ## 6. 输出 Word 为 PDF 文档 ⭐⭐⭐⭐⭐
 
-书写论文、一般文档的重要一步就是将 docx 导出为  PDF，嵌入了所需字体的 PDF 文件会以精准的方式呈现文档的原貌。
+书写论文、一般文档的重要一步就是将 docx 导出为 PDF，嵌入了所需字体的 PDF 文件会以精准的方式呈现文档的原貌。
 
 这里的原则是：**尽可能使用 Word (Office 365) 的原生功能，而不是借助第三方的插件。**
 
