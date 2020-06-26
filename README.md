@@ -30,18 +30,18 @@ mathpix是一个公式OCR软件，通过该软件，可以提取图片中的印�
 
 直接在官网下载二进制安装包即可使用。目前已经有比较好的解决方案，所以不再提供安装包下载。
 
-### 1.3 通过 mathpix.store 网站充值 mathpix ⭐⭐⭐⭐
-
-目前我测试了购买情况，发现价格挺便宜，而且是独立账号，可以去这个网站看看。网址是 mathpix.store 。
+可通过 mathpix.store 网站充值 mathpix，目前我测试了购买情况，发现价格挺便宜，而且是独立账号，可以去这个网站看看。网址是 mathpix.store 。
 
 **如果可以把上述几个软件结合使用，那么在写论文的背景知识的过程中，写公式效率可以提升10倍左右！**
 
 ### 1.3 `latexLive.com` 网站 ⭐⭐⭐⭐⭐
 
-这个网站是著名的哔哩哔哩 UP 主【[妈咪说MommyTalk](妈咪说MommyTalk)】开发的一款 web [程序](latexlive.com)，该程序内部集成了 mathpix 的接口，可以非常方便地进行公式在线编辑、公式 OCR。在 Windows10 系统上通过 `win Shift S` 键截图到剪贴板，然后在 latexLive.com 网站对应页面进行全局粘贴，可以很快速地实现 OCR，macOS 也可以通过某些截图软件实现该功能。
+这个网站是著名的哔哩哔哩 UP 主【[妈咪说 MommyTalk](妈咪说MommyTalk)】开发的一款 web [程序](latexlive.com)，该程序内部集成了 mathpix 的接口，可以非常方便地进行公式在线编辑、公式 OCR。在 Windows10 系统上通过 `win Shift S` 键截图到剪贴板，然后在 latexLive.com 网站对应页面进行全局粘贴，可以很快速地实现 OCR，macOS 也可以通过某些截图软件实现该功能。
 
 ![latexlive](img/latexlive.com公式识别.gif)
 > ↑ latexLive.com 的威力！
+
+---
 
 ## 2. 为什么不用MathType等插件
 
@@ -59,11 +59,13 @@ Office 365 的内置公式比较强大。渲染之后与原文档锲合度最高
 
 > **365 内置的公式，支持段落调节，而 MathType 等插件生成的公式，不支持自动调节，在某些情况下很是难看。**
 
+---
+
 ## 3. 安装字体 ⭐⭐⭐⭐⭐
 
-要使用下面这个demo方案，需要安装一款字体：`Latin Modern Math`。本 Repository 已经给出，直接切换到 `01. Latin Modern Math/otf/` 文件夹下，找到 latinmodern-math.otf 文件，右键->安装即可。macOS 用户自己对照摸索，非常简单。
+要使用下面这个demo方案，需要安装一款字体：`Latin Modern Math`。本 Repository 已经给出，直接切换到 `fonts/01. Latin Modern Math/otf/` 文件夹下，找到 `latinmodern-math.otf` 文件，右键 -> 安装即可。macOS 用户自己对照摸索，非常简单。
 
-这个字体相对比较好看，不过这里也提供了其他一些解决方案。
+这个字体相对比较好看，不过这里也提供了其他一些[解决方案](fonts/README.md)。
 
 ## 4. 示例
 
@@ -87,11 +89,11 @@ Office 365 的内置公式比较强大。渲染之后与原文档锲合度最高
 
 Just enjoy it.
 
-### 4.2 利用 latexlive.com 导出 MathML 对象粘贴到 Word ⭐⭐⭐⭐⭐
+### 4.2 利用 `latexlive.com` 导出 MathML 对象粘贴到 Word ⭐⭐⭐⭐⭐
 
 ![从 web 程序复制 MathML 对象到 Word](img/复制%20MathML%20对象.gif)
 
-> 如果你的网络访问 latexLive.com 没问题的话，建议使用这个方法。因为 Word 自带的编辑器有可能抽风。
+> 如果你的网络访问 `latexLive.com` 没问题的话，建议使用这个方法。因为 Word 自带的编辑器有可能抽风。
 
 ## 5. 输出 Word 为 PDF 文档 ⭐⭐⭐⭐⭐
 
@@ -101,7 +103,7 @@ Just enjoy it.
 
 ### 5.1 Windows 10 平台
 
-Windows 10 自带的导出功能并不完善，对于我们最常用的数学字体 Latin Modern Math 的支持不好，如果强行使用 Word 的导出功能，会使得输出的 PDF 中的数学公式为位图形式，锯齿感严重。之前的解决办法是安装 Adobe 的 PDF Maker 插件，这款插件是 Acrobat Pro 自带的一个 Word 插件，该插件的导出功能比较强大。后经 @invisprints 的提醒，发现有更加简单的方法。具体可参见 issue #1 。
+Windows 10 自带的导出功能并不完善，对于我们最常用的数学字体 `Latin Modern Math` 的支持不好，如果强行使用 Word 的导出功能，会使得输出的 PDF 中的数学公式为位图形式，锯齿感严重。这这里我们直接选择用虚拟打印机将 DOCX 文档打印成 PDF。
 
 ![microsoft_print_to_pdf](img/microsoft_print_to_pdf.png)
 
